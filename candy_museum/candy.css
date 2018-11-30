@@ -1,59 +1,76 @@
 body {
-    background: #f5d9df;
-    font-family: 'Nunito', sans-serif;
+  background: #f5d9df;
+  font-family: "Nunito", sans-serif;
 }
 
-#mainNav {
-    font-size: 1.5rem;
-    font-weight: 200;
-}
-
+/* Navbar */
 #mainNav .nav-link {
-    transition: 0.25s;
-    color: white;
+  transition: 0.25s;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 200;
 }
 
 #mainNav .nav-link:hover {
-    color: #ea1c2c;
+  color: #ea1c2c;
 }
 
 #mainNav .navbar-brand {
-    color: #ea1c2c;
+  color: #ea1c2c;
+  font-size: 1.5rem;
+  font-weight: 200;
 }
 
+/* Navbar scroll toggle */
+.navbar.scrolled {
+  background: rgba(222, 192, 222, 0.5);
+  transition: background 0.75s;
+}
+
+/* Museum of Candy repetition */
 #words h2 {
-    font-weight: 200;
-    font-size: 4rem;
+  font-weight: 200;
+  font-size: 4rem;
 }
 
 #words span {
-    color: #ea1c2c;
+  color: #ea1c2c;
 }
 
-.col-lg-6>img {
-    width: 100%;
-    height: auto;
+/* Adding gaps above and below the middle image */
+#middle-image {
+  margin: 100px 0px 100px 0px;
 }
 
+/* Making images fit/stretch to half of document */
+.col-lg-6 > img {
+  width: 100%;
+  height: auto;
+}
+
+/* Blurb text */
 .blurb h2 {
-    color: #ea1c2c;
-    font-weight: 100;
-    font-size: 2.5rem;
+  color: #ea1c2c;
+  font-weight: 100;
+  font-size: 2.5rem;
 }
 
 .blurb .lead {
-    color: #f498b8;
-    font-weight: 100;
-    font-size: 1.125rem;
+  color: #f498b8;
+  font-weight: 100;
+  font-size: 1.125rem;
+  line-height: 2;
 }
 
+/* Resizing blurb icon */
 .blurb img {
-    width: 15%;
+  width: 25%;
 }
 
+/* Resize word repitition pane as screen size varies */
 @media (max-width: 1200px) {
-    #words h2 {
-        font-weight: 200;
-        font-size: 3rem;
-    }
+  #words h2 {
+    font-weight: 200;
+    font-size: 3rem;
+  }
 }
